@@ -124,57 +124,52 @@ $$P_{0}=\frac{P_{i}(T=t_{j})}{P}\tag{1.2}$$
 $$ K_{0}=\frac{K_{i}}{K}\int\limits_{t_{j-1}}^{t_{j}}\frac{V_{0}(t)+P_{0}(t)dt}{2}\tag{1.4}$$
 
 
-On examining the dependency schedule it can be assumed that the endless increase in node capacity does not entail an endless increase in the *relative input share* and the principle of its distribution, for instance, on a polynomial prognosis, will be of an exponential character, which can be used to offset its impact on distribution, factoring in the weight of the following indicators.
+При рассмотрении графика зависимости можно предположить,  что бесконечно увеличение мощности ноды не повлечет за собой бесконечного роста относительной доли вклада и закономерность её распределения, например, при полиномиальном прогнозе, будет иметь экспоненциальный характер, что можно будет использовать для компенсации его влияния на распределение, учитывая вес следующих показателей.
 
-*4.  Setting totals.*
+*4.  Суммы ставок.*
 
-Considering one of the basic requirements of a peer-to-peer network which excludes an increasing domination of its separate members in the operational information exchange, with the aim of preventing its centralization of data this indicator can be used as an **offsetting** influence of technical indicators 1, 2 and 3. Prefacing the description, the approach resides essentially in the fact that the calculation of the node ranking at the moment of time t is made by calculating the average value of the natural logarithm from the relative amount of settings and the logarithmically reverse function from the value of the relative input of the node into the information exchange. In other words, the number of $S$ settings over the j period of events is lograrithmically inverse to the relative input into the information exchange.
+Учитывая одно из основных требований peer-to-peer сети, которое исключает рост доминирования её отдельных членов в оперативном обмене информацией, с целью предотвращения её централизации данный показатель можно использовать как  **компенсирующий** influence of technical indicators 1, 2 and 3. Предваряя описание, суть подхода в том, что расчет рейтинга ноды в момент времени $t$ производится расчетом среднего значения натурального логарифма от относительной суммы ставок и  логарифмически обратной функции от значения относительного вклада ноды в информационный обмен.  То-есть приведенная сумма ставок $S$ за время $j$-го периода событий логарифмически инверсна относительному вкладу в информационный обмен.
 
-This dependency demonstrates the offsetting deliberateness of calculating the node ranking from absolutely different weight categories. In other words, with the maximum possible increase in computing resources, network quality and activity and with the same maximum setting totals, the node ranking will remain no greater than at the average level. With other defined values, higher or lower rankings that do not contradict logic are possible. 
-Thus 
+Данная зависимость демонстрирует компенсационную взвешенность подсчета рейтинга нод из абсолютно разных “весовых” категорий.  То-есть, при максимально возможном увеличении вычислительных ресурсов, качества сети и активности и при таких же максимальных суммах ставок, рейтинг ноды останется не более чем на среднем уровне. При других определенных значениях, возможны более высокие или более низкие рейтинги, не противоречащие логике.
+Таким образом
 
-$$S_{0}=\frac{S_i(T=t_{i})}{\sum\limits_{i_{0}}^{N}S_{i}}\tag{1.5}$$
+$$S_{0}={S_i(T=t_{i})}/{\sum\limits_{i_{0}}^{N}S_{i}}\tag{1.5}$$
 
-Where the settings total of the i node over the period of the j event is the value of the settings total of the i node over the time of the j event.
+Где $S_{i}$- сумма ставок $i$-ой ноды за время события $j$, $S_{0}$- приведенное значение суммы ставок $i$-й ноды за время события $j$. 
 
-**Note:** *It will be appropriate to explain that the time of event j is the time interval from the last event in the network in which the latest values required in this method of indicators were obtained.*
+**Примечание:** *Уместно будет пояснить, что время события j есть интервал времени от последнего события в сети, при котором были получены последние значения необходимых в данной методике показателей.*
 
-*5. Accuracy of historical information, that is, of 'rumors'*
+*5. Достоверности исторической информации, то-есть “слухов”*
 
-In systems with a distributed confirmation of transactions, in order to implement most consensus algorithms information on past events in the network is used.
+В системах с распределенным подтверждением транзакций, для реализации большинства алгоритмов консенсуса, используется информация о прошлых событиях в сети. Но учитывая тот факт, что далеко не все ноды могут физически находится в сети, в их блокчейнах формируются пробелы, в силу чего остальные ноды, при запросе о восстановлении своих недостающих данных при вычислении алгоритма консенсуса, вынуждены впустую тратить вычислительный ресурс на запрос у них несуществующих данных. Чтобы снизить вероятность такого исхода и тем самым сохранить скоростные показатели обмена в сети на требуемом уровне, необходимо включить в расчет рейтинга приведенную достоверность информации $I_{0}$ как отношение количества пробелов в блокчейне с общим объемом единиц информации    в нем. В **_отличии от показателя 3_**, данный показатель формируется не относительно всей сети, а о собственных ресурсах ноды. 
 
-But factoring in the fact that by no means all modes can physically be situated in the network, their blockchains form blank spots whereby the other nodes when there is a request to restore missing data on calculating the consensus algorithm are forced to lose the computing resource for the request for non-existent data.
+Формально, его можно учесть как весовой мультипликативный коэффициент при расчете окончательного рейтинга ноды.
 
-In order to reduce the likelihood of such an outcome and thereby maintain the exchange speed indicators in the network at the required level, it is essential to include in the ranking calculation the accuracy of information $I_{0}$ as a ratio of the number of blank spots in the blockchain to the total amount of information units in it. **As opposed to parameter 3**, this parameter is formed not in relation to the whole network but on the node's own resources.
+**Описание методики**
 
-Formally, it can be considered as a weight multiplicative coefficient with a calculation of the final node ranking.
-
-**Description of the method**
-
-Factoring in these indicators and based on a hypothesis, the first stage of the ranking calculation at the moment of time t over the time of the event j looks as follows:
+С учетом приведенных показателей и исходя из гипотезы, первый этап расчета рейтинга  в момент времени t за время действия события j выглядит следующим образом:
 
 $$R_{j}=I_{0}(\ln{S_{0}+\ln{K_{0}/(K_{0}-1)}})/2\tag{1.6}$$
-	R_j=I_0   (lnS_o+(ln K_0)/(K_0-1))/2                                                (1.6)
 
-At this stage, as already stated, we obtain the discrete value ranking over the time of the event j.
-A more refined task of the modality is in having with high probability an accurate ranking value in this uninterrupted period *Δt*  from the moment event *j* ends.
+На данном этапе, как уже сказано,  мы получаем дискретное значение рейтинга за время события $j$.
+Уточненная же задача методики состоит в том, чтобы иметь с высокой вероятность достоверное значение рейтинга в заданный непрерывный период $\Delta{t}$  с момента окончания события $j$ .
 
-For illustration purposes let us construct a graph of relative dependencies outlined above.
+Для наглядности построим графики относительный зависимостей, изложенных выше. 
 
 ![Screenshot](_images/4.jpg)
  
-The diagram shows the dependency of a relative value of a node ranking with regard to others in the network which is measured along the vertical axis from the point where the schedules of the two functions intersect: K, which characterises the relative technical provision of the service and its network parameters, is the hash rate and ping time, and S is the relative balance. The ranking value is at its maximum at the point of intersection, in other words when achieving a balance of two indicators, that is, their mutual offsetting. To put it another way, to raise one's ranking having bought up all tokens or created a super powerful pool of computing capabilities is impossible, the ranking will be offset. In theory this is possible, but this is when there is one node service in the network.
+На рисунке наглядно представлена зависимость относительной величины рейтинга ноды относительно других в сети, которая отсчитывается по оси ординат от точки пересечения графиков двух функций:  $K$, характеризующей относительную техническую оснащенность сервиса, его сетевые параметры, хеш рейт и ping time, и $S$ - относительный баланс. Значение рейтинга максимально в точке пересечения, т.е  при достижении баланса двух показателей, т.е. Их взаимной компенсации. Другими словами - повысить свой рейтинг максимально скупив все токены или создав супермощный пул вычислительных мощностей невозможно, рейтинг будет компенсирован. В теории это возможно, но это при наличии одного сервиса ноды в сети.
 
-If we depict the graph another way:
+Если изобразить графики по другому
 
 ![Screenshot](_images/5.jpg)
  
-you can see the average calculation of the ranking value as an average value of indicators K and S on the synthetic curve of the values.
-(The original application for demonstrating how the algorithm works can be downloaded from GitHub repository https://github.com/evenfound/even-network/tree/master/r-score-demo).
+можно увидеть среднее отсчет значения рейтинга как среднее значение показателей $K$ и $S$ на синтетической кривой из значений. 
+(Исходный приложение для демонстрации работы алгоритма можно скачать из репозитория GitHub по сслылке - https://github.com/evenfound/even-network/tree/master/r-score-demo).
 
-## Structure of transactions and messages
+## Структура транзакций и сообщений
 
-Let us turn to classic examples for understanding the information assets transmitting process in a basic protocol. Alice has the initial number A_SECRET_SEED, which contains 100 units in 4 different addresses, and the total balances provide this value:
+Чтобы понять как в базовом протоколе реализуется передача информационных активов - обратимся к классике. Алиса имеет начальное число A_SECRET_SEED, которое содержит 100 единиц в 4 разных адресах, в сумма балансов которых и дает это значение:
 
 	seed : A_SECRET_SEED 
 	address[0] : QGHFGFQSGQFS …… AAA, balance : 10 
@@ -183,68 +178,72 @@ Let us turn to classic examples for understanding the information assets transmi
 	address[3] : QGHFGFQSGQFS …… DDD, balance : 60 
 	address[4] : QGHFGFQSGQFS …… EEE, balance : 0
 
-Bob doesn't have anything in his wallets:
+Боб ничего не имеет на своих кошельках:
 
 	seed : B_SECRET_SEED 
 	address[0] : AHGSHFSJHFSJ…… QQQ, balance : 0 
 	address[1] : AHGSHFSJHFSJ…… VVV, balance : 0
 
-Alice decides to send Bob 80 information units at the address AHGSHFSJHFSJ…… QQQ .. A message in the EVEN basic protocol is a connected hash with an index of three types of transaction: input, output and meta-transactions. For our scenario it is initially essential to prepare an output transaction, which means that we want to send to Bob's address 80 information units:
+Алиса принимает решение отправить Бобу 80 единиц информации на адрес AHGSHFSJHFSJ…… QQQ . 
+Сообщением в базовом протоколе EVEN является связанный хеш индексами набор транзакций трех типов: ввод, вывод и мета-транзакции. 
+Для нашего сценария сначала необходимо  подготовить выходную транзакцию, что означает, что мы хотим отправить на адрес Боба  80 единиц информации:
 
 ![Screenshot](_images/6.jpg)
 
-*Draw up a transaction to Bob's address of 80 information units*
+*Вывести транзакцию на адрес Боба 80 информационных единиц*
 
-Next we will need to draw up an input transaction. In this scenario all four addresses will have to be used which contain ( 10 + 5 + 25 + 60 > 80) information units to perform the output value to the sum of 80.
+Далее нужно будет подготовить входную транзакцию. В данном сценарии потребуется использовать все четыре адреса, которые содержат ( 10 + 5 + 25 + 60 > 80) информационных единиц для выполнения выходного значения в сумме 80.
 
 ![Screenshot](_images/7.png)
 
-*Four output transactions which send units to Bob's address*
+*Четыре входные транзакции, которые расходуют единицы по адресу Боба*
 
-Next we will need to draw up an input transaction. In this scenario all four addresses will have to be used which contain (10 + 5 + 25 + 60 > 80) information units to perform the output value to the sum of 80. An input transaction should contain the transaction signature, which means that it is essential to add an additional meta-transaction to transfer the signature, it must be added:
+Далее нужно будет подготовить входную транзакцию. В данном сценарии потребуется использовать все четыре адреса, которые содержат ( 10 + 5 + 25 + 60 > 80) информационных единиц для выполнения выходного значения в сумме 80. 
+Входная транзакция должна содержать подпись транзакции, это означает, что необходимо добавить  дополнительную мета-транзакцию для переноса подписи, необходимо добавить её:
+
 
 ![Screenshot](_images/8.png)
 
-*Adding to the meta-transaction message to transfer the signature*
+*Добавление в сообщение мета-транзакций для передачи подписи*
 
-Drawing up the message has not been completed: the packet is unbalanced. Thus four transactions have been formed for 100 information units: 10 + 5 + 25 + 60 = 100 inputs and 80 outputs, with 20 information units remaining that should be returned to the sender's wallet. For this an additional transaction needs to be created. The wallet creates a new address to receive an output transaction for the remainder marked 'unspend':
+Формирование сообщения не закончено - получен не сбалансированный пакет. Так как сформировано четыре транзакции на 100 информационных  единиц: 10 + 5 + 25 + 60 = 100 входов и 80 выходов, существует остаток в размере 20 информационных единиц,  которые нужно вернуть на счет кошелька отправителя. Для этого необходимо сформировать дополнительную транзакцию. Кошелек создает новый адрес для получения выходной транзакции остатка с пометкой *_unspend_*:
 
  ![Screenshot](_images/9.jpg)
 
-After this the balanced packet is received and the conclusion of the message can be begun. For this it is essential to fill out consecutively the transaction indexes, the last index and generate the packet's **hash function** with the help of the **hash function SHA-3**. 
+После этого сбалансированный пакет получен и можно приступать к окончательному формированию сообщения. Для этого необходимо заполнить последовательно индексы транзакций, последний индекс и сгенерировать **хеш-функцию** пакета с помощью **хеш-функции SHA-3**. 
 
 ![Screenshot](_images/10.png)
 
-*Filling out the indexes*
+*Заполнение индексов*
 
-After this the balanced packet is received and the conclusion of the message can be started. For this it is essential to fill out consecutively the transaction indexes, the last index and generate the packet's **hash function** with the help of the **hash function SHA-3**.
-
-The hash function uses a sponge algorithm that will consecutively absorb the transactions, checking each element one by one (the order is important) and then will generate the result. In addition, at the stage of receiving the hash the function will check whether the packet hash is safe or not. If it is not, it will change the obsolete tag of the u-head transaction (a transaction with the index 0) and again generate a hash. After the message hash has been received, it is essential to continue filling out the transactions and receive the following set:
+После этого сбалансированный пакет получен и можно приступать к окончательному формированию сообщения. Для этого необходимо заполнить последовательно индексы транзакций, последний индекс и сгенерировать **хеш-функцию** пакета с помощью **хеш-функции SHA-3**. Используемая хеш-функция использует алгоритм губки, который последовательно будет поглощать транзакции, проверяя каждый элемент по одному (порядок важен), а затем генерировать  результат. Кроме того, на этапе получения хеша пакета функция проверит, является ли хеш пакета безопасным или нет. Если нет, она изменит устаревший тег uголовной транзакции (транзакция с индексом 0) и снова сгенерирует хеш.
+Псоле того, как хеш сообщения получен, необходимо продолжить заполнение транзакций и получить следующий набор:
 
 ![Screenshot](_images/11.png)
 
-*Filling out the message hashes*
+*Заполнение хешей сообщения*
 
-Next it is essential to sign the input transactions with the private key of the corresponding address. For this you can receive the address private key from the key generator with the help of A_SECRET_SEED of the wallet. Using the address secret key, it becomes possible to use the signature fragment generator with the private key and the packet hash in order to receive the transaction signature.
+Далее необходимо подписать входные транзакции с помощью закрытого ключа соответствующего адреса. Для этого можно получить адресный закрытый ключ от генератора ключей с помощью A_SECRET_SEED HD кошелька. Используя адресный секретный ключ, становиться возможным  использование Генератора фрагментов подписи с закрытым ключом и пакетным хешем для получения подписи транзакции.
 
 ![Screenshot](_images/12.png) 
 
-*Using the key generator to receive the signature fragment generator.*
+*Использование генератора ключей для получения генератора фрагмента подписи.*
   
 ![Screenshot](_images/13.png) 
 
 ![Screenshot](_images/14.png) 
 
-*Filling in the signature with the appropriate signature fragment generator for each input transaction.*
+*Заполнение подписи соответствующим генератором фрагментов подписи 
+для каждой входной транзакции.*
 
-After this all parts of the message are ready.
+После этого все части сообщения готовы.
 
-Next the chain of its own transactions is connected, through an indication in the trunk field of the hash value of the last input transaction, and the chain of transactions received in the inbox of unconfirmed transactions is connected, through an indication of the hashes of the head transaction messages. Below is the connection scheme draft.
+Далее происходит подключение цепи собственных транзакции указанием в поле trunk значения  хеша последней входной транзакции и подключение цепи транзакций, полученных в раздел inbox неподтвержденных транзакций указанием хеше	й головных транзакций сообщений. Ниже представлен эскиз  схемы подключения.
  
 ![Screenshot](_images/15.jpg) 
 
-*Scheme of DAG branches connection.*
+*Схема подключения ветвей DAG.*
 
 ![Screenshot](_images/16.png) 
 
-After this the message is ready to be sent.
+После этого сообщение готово к отправке.
