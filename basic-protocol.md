@@ -133,7 +133,7 @@ Considering one of the basic requirements of a peer-to-peer network which exclud
 This dependency demonstrates the offsetting deliberateness of calculating the node ranking from absolutely different weight categories. In other words, with the maximum possible increase in computing resources, network quality and activity and with the same maximum setting totals, the node ranking will remain no greater than at the average level. With other defined values, higher or lower rankings that do not contradict logic are possible. 
 Thus 
 
-	S_o=1/(∑_(i=0)^N S_i ) S_i (T=t_j)                                        (1.5)
+$$S_{0}=\frac{S_i(T=t_{i})}{\sum\limits_{i_{0}}^{N}S_{i}}\tag{1.5}$$
 
 Where the settings total of the i node over the period of the j event is the value of the settings total of the i node over the time of the j event.
 
@@ -145,7 +145,7 @@ In systems with a distributed confirmation of transactions, in order to implemen
 
 But factoring in the fact that by no means all modes can physically be situated in the network, their blockchains form blank spots whereby the other nodes when there is a request to restore missing data on calculating the consensus algorithm are forced to lose the computing resource for the request for non-existent data.
 
-In order to reduce the likelihood of such an outcome and thereby maintain the exchange speed indicators in the network at the required level, it is essential to include in the ranking calculation the accuracy of information *I_o* as a ratio of the number of blank spots in the blockchain to the total amount of information units in it. **As opposed to parameter 3**, this parameter is formed not in relation to the whole network but on the node's own resources.
+In order to reduce the likelihood of such an outcome and thereby maintain the exchange speed indicators in the network at the required level, it is essential to include in the ranking calculation the accuracy of information $I_{0}$ as a ratio of the number of blank spots in the blockchain to the total amount of information units in it. **As opposed to parameter 3**, this parameter is formed not in relation to the whole network but on the node's own resources.
 
 Formally, it can be considered as a weight multiplicative coefficient with a calculation of the final node ranking.
 
@@ -153,6 +153,7 @@ Formally, it can be considered as a weight multiplicative coefficient with a cal
 
 Factoring in these indicators and based on a hypothesis, the first stage of the ranking calculation at the moment of time t over the time of the event j looks as follows:
 
+$$R_{j}=I_{0}(\ln{S_{0}+\ln{K_{0}/(K_{0}-1)}})/2\tag{1.6}$$
 	R_j=I_0   (lnS_o+(ln K_0)/(K_0-1))/2                                                (1.6)
 
 At this stage, as already stated, we obtain the discrete value ranking over the time of the event j.
