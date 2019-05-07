@@ -42,5 +42,5 @@
 
 #### Если в браузере на страницах GitHub не видны формулы
 
-то скрипт GreaseMonkey, который должен делать то, что вы хотите: Запустите [MathJax в Github](http://www.math.union.edu/locate/Cervone/transfer/mathjax/mathjax-in-github.user.js) . Он должен работать во всех основных браузерах (хотя некоторым нужны плагины для запуска скриптов GreaseMonkey; подробности см. В инструкциях по установке для этого вопроса ).
+то скрипт GreaseMonkey, который должен делать то, что вы хотите: Запустите, например,  [MathJax для Chrome](https://chrome.google.com/webstore/detail/mathjax-for-chrome/elbbpgnifnallkilnkofjcgjeallfcfa?hl=en-GB) . Он есть для всех основных браузеров (хотя некоторым нужны плагины для запуска скриптов GreaseMonkey; подробности см. В инструкциях по установке для этого вопроса ).
 
