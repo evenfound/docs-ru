@@ -1,23 +1,4 @@
-<!----- Conversion time: 3.319 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β17
-* Tue May 07 2019 04:26:35 GMT-0700 (PDT)
-* Source doc: https://docs.google.com/open?id=1iV82EfYm8xiWmssDzkx4_55PZCjipMkiqmAVIu8-too
-* This is a partial selection. Check to make sure intra-doc links work.
------>
-
-
-**_3. Структура сообщений _**
+##Структура сообщений 
 
 
     Каждая операция базового так и расширенного протокола в распределенной сети сопровождается очередью транзакций. 
