@@ -3,12 +3,12 @@
 Каждая операция базового так и расширенного протокола в распределенной сети сопровождается очередью транзакций. 
 
 Каждая транзакция имеет следующую структуру:
-<code>
+ 
 <table>
   <tr>
    <td>0
    </td>
-   <td><strong><code>hash</code></strong>
+   <td><strong> hash </strong>
    </td>
    <td>Уникальный мульхеш (адрес объекта IPFS) сообщения
    </td>
@@ -16,7 +16,7 @@
   <tr>
    <td>1
    </td>
-   <td><strong><code>id[t, v]</code></strong>
+   <td><strong> id[t, v] </strong>
    </td>
    <td>Тип транзакции и версия формата
    </td>
@@ -24,7 +24,7 @@
   <tr>
    <td>2
    </td>
-   <td><strong><code>address</code></strong>
+   <td><strong> address </strong>
    </td>
    <td>Адрес счета получателя или отправителя
    </td>
@@ -32,15 +32,15 @@
   <tr>
    <td>3
    </td>
-   <td><strong><code>message</code></strong>
+   <td><strong> message </strong>
    </td>
-   <td>Сообщение, сформированное генератором подписи из приватного ключа счета и хеша <strong><code>trunk</code></strong>
+   <td>Сообщение, сформированное генератором подписи из приватного ключа счета и хеша <strong> trunk </strong>
    </td>
   </tr>
   <tr>
    <td>4
    </td>
-   <td><strong><code>source</code></strong>
+   <td><strong> source </strong>
    </td>
    <td>Хеш адрес смарт-контракта или хеш другого информационного ресурса, являющегося предметом транзакции
    </td>
@@ -48,7 +48,7 @@
   <tr>
    <td>5
    </td>
-   <td><strong><code>value</code></strong>
+   <td><strong> value </strong>
    </td>
    <td>Размер отправления в единицах 
    </td>
@@ -56,7 +56,7 @@
   <tr>
    <td>6
    </td>
-   <td><strong><code>timestamp</code></strong>
+   <td><strong> timestamp </strong>
    </td>
    <td>Временная метка
    </td>
@@ -64,7 +64,7 @@
   <tr>
    <td>7
    </td>
-   <td><strong><code>trunk</code></strong>
+   <td><strong> trunk </strong>
    </td>
    <td>Хеш адрес IPFS своего последнего пакета  транзакций, адресуемого от имени или себе пакета транзакций.
    </td>
@@ -72,7 +72,7 @@
   <tr>
    <td>8
    </td>
-   <td><strong><code>branch[{h, p}]</code></strong>
+   <td><strong> branch[{h, p}] </strong>
    </td>
    <td>Массив объектов,  объединяющих уникальные хеш адреса IPFS  (h) пакетов транзакций первых в списке,  присланных в INBOX нодами, получившими право выбрать адресата в качестве валидатора, и подтверждений проверки их реверсивным анализом балансной цепочки (p)
    </td>
@@ -80,129 +80,125 @@
   <tr>
    <td>9
    </td>
-   <td><strong><code>tag</code></strong>
+   <td><strong> tag </strong>
    </td>
    <td>Информационное поле
    </td>
   </tr>
 </table>
-</code>
-
+ 
 
 Нулевое поле формируется генератором хеш адресов модуля IPFS решая две залачи:
-
-
-
 *   Криптозащиты содержимого сообщения;
 *   Однозначной уникальной идентификации в сети IPFS.
    
 Пример транзакций, в которой 3 EVEN переводятся с адреса Алисы на адрес Боба:
-
+ 
 <table>
   <tr>
    <td>
-<strong><code>hash</code></strong>
+<strong>hash</strong>
    </td>
-   <td colspan="3" ><strong><code>Qmsdkakad09sad0f9</code></strong>
+   <td colspan="3" ><strong> Qmsdkakad09sad0f9 </strong>
    </td>
-   <td><strong><code>id</code></strong>
+   <td><strong> id </strong>
    </td>
-   <td colspan="2" ><code>0x0001, 0x001</code>
+   <td colspan="2" > 0x0001, 0x001 
    </td>
-   <td><strong><code>addr</code></strong>
+   <td><strong> addr </strong>
    </td>
-   <td colspan="2" ><code>JHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ</code>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong><code>message</code></strong>
-   </td>
-   <td colspan="3" ><code>QL9RL9BRVGUKNOS9BJPEZNW9NWXSJCBKOJLGASARQMPXVZYXMAYOJDXTSNRX9KMWZNTJRZMONURODNXSD</code>
-   </td>
-   <td><strong><code>src</code></strong>
-   </td>
-   <td colspan="4" ><code>YDDQVGFO9OTJQSRGESYLPWLIDYBTFHUFQJ9HINVQVJMIKCHXBRNNOO9EZXGDOYJZPCPCZUARJ9IXA9999</code>
+   <td colspan="2" > JHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ 
    </td>
   </tr>
   <tr>
-   <td><strong><code>val</code></strong>
+   <td colspan="2" ><strong> message </strong>
    </td>
-   <td><strong><code>3</code></strong>
+   <td colspan="3" > QL9RL9BRVGUKNOS9BJPEZNW9NWXSJCBKOJLGASARQMPXVZYXMAYOJDXTSNRX9KMWZNTJRZMONURODNXSD 
    </td>
-   <td><strong><code>timestamp</code></strong>
+   <td><strong> src </strong>
+   </td>
+   <td colspan="4" > YDDQVGFO9OTJQSRGESYLPWLIDYBTFHUFQJ9HINVQVJMIKCHXBRNNOO9EZXGDOYJZPCPCZUARJ9IXA9999 
+   </td>
+  </tr>
+  <tr>
+   <td><strong> val </strong>
+   </td>
+   <td><strong> 3 </strong>
+   </td>
+   <td><strong> timestamp </strong>
    </td>
    <td>
-        <code>1515494426</code>
+         1515494426 
    </td>
-   <td colspan="2" ><strong><code>trunk</code></strong>
+   <td colspan="2" ><strong> trunk </strong>
    </td>
-   <td colspan="4" ><code>QmAsaskakad09sad0f9</code>
+   <td colspan="4" > QmAsaskakad09sad0f9 
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong><code>branch</code></strong>
+   <td colspan="2" ><strong> branch </strong>
    </td>
    <td colspan="2" >
-<code>Y{QmJHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ, ASHASHGAJSGK}, {QmHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ, ASHASHGAJSGK} ..</code>
+ Y{QmJHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ, ASHASHGAJSGK}, {QmHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ, ASHASHGAJSGK} .. 
    </td>
-   <td colspan="2" ><strong><code>tag</code></strong>
+   <td colspan="2" ><strong> tag </strong>
    </td>
-   <td colspan="4" ><code>TEST_TRANSAC</code>
+   <td colspan="4" > TEST_TRANSAC 
    </td>
   </tr>
 </table>
-
+ 
 
 
 <table>
   <tr>
-   <td><strong><code>hash</code></strong>
+   <td><strong> hash </strong>
    </td>
-   <td colspan="3" ><strong><code>Qmsdkakad09sad0f9</code></strong>
+   <td colspan="3" ><strong> Qmsdkakad09sad0f9 </strong>
    </td>
-   <td><strong><code>id</code></strong>
+   <td><strong> id </strong>
    </td>
-   <td colspan="2" ><code>0x0001, 0x001</code>
+   <td colspan="2" > 0x0001, 0x001 
    </td>
-   <td><strong><code>addr</code></strong>
+   <td><strong> addr </strong>
    </td>
-   <td colspan="2" ><code>AJSAJKHSNXABONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXM</code>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong><code>message</code></strong>
-   </td>
-   <td colspan="3" ><code>QL9RL9BRVGUKNOS9BJPEZNW9NWXSJCBKOJLGASARQMPXVZYXMAYOJDXTSNRX9KMWZNTJRZMONURODNXSD</code>
-   </td>
-   <td><strong><code>src</code></strong>
-   </td>
-   <td colspan="4" ><code>YDDQVGFO9OTJQSRGESYLPWLIDYBTFHUFQJ9HINVQVJMIKCHXBRNNOO9EZXGDOYJZPCPCZUARJ9IXA9999</code>
+   <td colspan="2" > AJSAJKHSNXABONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXM 
    </td>
   </tr>
   <tr>
-   <td><strong><code>val</code></strong>
+   <td colspan="2" ><strong> message </strong>
    </td>
-   <td><strong><code>-3</code></strong>
+   <td colspan="3" > QL9RL9BRVGUKNOS9BJPEZNW9NWXSJCBKOJLGASARQMPXVZYXMAYOJDXTSNRX9KMWZNTJRZMONURODNXSD 
    </td>
-   <td><strong><code>timestamp</code></strong>
+   <td><strong> src </strong>
+   </td>
+   <td colspan="4" > YDDQVGFO9OTJQSRGESYLPWLIDYBTFHUFQJ9HINVQVJMIKCHXBRNNOO9EZXGDOYJZPCPCZUARJ9IXA9999 
+   </td>
+  </tr>
+  <tr>
+   <td><strong> val </strong>
+   </td>
+   <td><strong> -3 </strong>
+   </td>
+   <td><strong> timestamp </strong>
    </td>
    <td>
-        <code>1515494426</code>
+         1515494426 
    </td>
-   <td colspan="2" ><strong><code>trunk</code></strong>
+   <td colspan="2" ><strong> trunk </strong>
    </td>
-   <td colspan="4" ><code>QmAsaskakad09sad0f9</code>
+   <td colspan="4" > QmAsaskakad09sad0f9 
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong><code>branch</code></strong>
+   <td colspan="2" ><strong> branch </strong>
    </td>
    <td colspan="2" >
-<code>Y{QmJHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ, ASHASHGAJSGK}, {QmHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ, ASHASHGAJSGK} ..</code>
+ Y{QmJHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ, ASHASHGAJSGK}, {QmHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ, ASHASHGAJSGK} .. 
    </td>
-   <td colspan="2" ><strong><code>tag</code></strong>
+   <td colspan="2" ><strong> tag </strong>
    </td>
-   <td colspan="4" ><code>TEST_TRANSAC</code>
+   <td colspan="4" > TEST_TRANSAC 
    </td>
   </tr>
 </table>
@@ -329,7 +325,7 @@ _2. Формирование  очереди транзакций_
 
 <table>
   <tr>
-   <td><strong><code>QmN</code></strong>
+   <td><strong> QmN </strong>
    </td>
    <td>
     AAAAAAAAA
@@ -337,7 +333,7 @@ _2. Формирование  очереди транзакций_
    <td>
     +60
    </td>
-   <td>Trunk: <strong><code>QmN-1</code></strong>
+   <td>Trunk: <strong> QmN-1 </strong>
    </td>
    <td>Branch
    </td>
@@ -346,7 +342,7 @@ _2. Формирование  очереди транзакций_
 
 Далее, формируем транзакцию сдачи:  
 
-* вставляем в её поле trunk адрес <code>QmN</code></strong>,
+* вставляем в её поле trunk адрес  QmN </strong>,
 * генерируем подпись из него и приватного ключа и вставляем результат в поле message,
 * Генерируем (он уже есть в таблице) новый адрес на основе seed модуля кошелька и вносим в поле value значение сдачи - 20e,
 * Вставляем  PoS<sup>n   </sup>валидацию в поле branch,
@@ -355,7 +351,7 @@ _2. Формирование  очереди транзакций_
 <table>
   <tr>
    <td>
-<strong><code>QmN+1</code></strong>
+<strong> QmN+1 </strong>
    </td>
    <td>
     EEEEEEEEEEE
@@ -363,7 +359,7 @@ _2. Формирование  очереди транзакций_
    <td>
     +20
    </td>
-   <td>Trunk: <strong><code>QmN</code></strong>
+   <td>Trunk: <strong> QmN </strong>
    </td>
    <td>Branch
    </td>
@@ -375,7 +371,7 @@ _2. Формирование  очереди транзакций_
 
 <table>
   <tr>
-   <td><strong><code>QmN+2</code></strong>
+   <td><strong> QmN+2 </strong>
    </td>
    <td>
     DDDDDDDDD
@@ -383,7 +379,7 @@ _2. Формирование  очереди транзакций_
    <td>
     -60
    </td>
-   <td>Trunk: <strong><code>QmN+1</code></strong>
+   <td>Trunk: <strong> QmN+1 </strong>
    </td>
    <td>Branch
    </td>
@@ -394,7 +390,7 @@ _2. Формирование  очереди транзакций_
 
 <table>
   <tr>
-   <td><strong><code>QmN+3</code></strong>
+   <td><strong> QmN+3 </strong>
    </td>
    <td>
     CCCCCCCCC
@@ -402,7 +398,7 @@ _2. Формирование  очереди транзакций_
    <td>
     -25
    </td>
-   <td>Trunk: <strong><code>QmN+2</code></strong>
+   <td>Trunk: <strong> QmN+2 </strong>
    </td>
    <td>Branch
    </td>
@@ -413,7 +409,7 @@ _2. Формирование  очереди транзакций_
 
 <table>
   <tr>
-   <td><strong><code>QmN+4</code></strong>
+   <td><strong> QmN+4 </strong>
    </td>
    <td>
     BBBBBBBBBB
@@ -421,7 +417,7 @@ _2. Формирование  очереди транзакций_
    <td>
     -5
    </td>
-   <td>Trunk: <strong><code>QmN+3</code></strong>
+   <td>Trunk: <strong> QmN+3 </strong>
    </td>
    <td>Branch
    </td>
@@ -432,7 +428,7 @@ _2. Формирование  очереди транзакций_
 
 <table>
   <tr>
-   <td><strong><code>QmN+5</code></strong>
+   <td><strong> QmN+5 </strong>
    </td>
    <td>
     AAAAAAAAAA
@@ -440,7 +436,7 @@ _2. Формирование  очереди транзакций_
    <td>
     -10
    </td>
-   <td>Trunk: <strong><code>QmN+4</code></strong>
+   <td>Trunk: <strong> QmN+4 </strong>
    </td>
    <td>Branch
    </td>
@@ -451,7 +447,7 @@ _2. Формирование  очереди транзакций_
 
 <table>
   <tr>
-   <td><strong><code>QmN+6</code></strong>
+   <td><strong> QmN+6 </strong>
    </td>
    <td>
     QQQQQQQQ
@@ -459,7 +455,7 @@ _2. Формирование  очереди транзакций_
    <td>
     +80
    </td>
-   <td>Trunk: <strong><code>QmN+5</code></strong>
+   <td>Trunk: <strong> QmN+5 </strong>
    </td>
    <td>Branch
    </td>
