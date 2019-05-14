@@ -4,4 +4,8 @@
 - [Базовый протокол сети](ru/basic-protocol.md)
 - Cообщения
   - [Общая структура](ru/message.md)
+  - [Предложения по реализации](ru/transaction-implementation.md)
+- Умные контракты
+  - [Обзор и сравнение некоторых виртуальных машин](ru/vm-comparison.md)
+  - [Итоги тестирования виртуальных машин](ru/vm-evaluation-results.md)
 - [Памятка писателям](ru/howto.md)
