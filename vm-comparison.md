@@ -1,4 +1,4 @@
-XXXXXXXXXXXXXXXXXXX
+# Обзор и сравнение некоторых виртуальных машин
 
 | Название	| Кто использует | Компилируемость | Pure Go	| Solidity	| C++, Go, etc. | JavaScript	| Custom lang. | Direct support 256-bit ints |
 |----|----|----|----|----|----|----|----|----|
