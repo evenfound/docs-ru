@@ -13,7 +13,7 @@ _Рассмотрим пример работы алгоритма._
 
 _Создание прокси счета._
 
-Для того, чтобы _нода  _могла выполнить обмен цифрового актива или выставить его на продажу, она должна удовлетворять двум условиям:
+Для того, чтобы _нода_ могла выполнить обмен цифрового актива или выставить его на продажу, она должна удовлетворять двум условиям:
 *   Иметь счет в сети, статус информационного ресурса которого хочет изменить _нода_,
 *   Иметь мультивалютный кошелек приватной сети. 
 
@@ -60,53 +60,53 @@ _Создание прокси счета._
 
 <table>
   <tr>
-   <td><strong><code>hash</code></strong>
+   <td><strong>hash</strong>
    </td>
-   <td colspan="3" ><strong><code>Qmsdkakad09sad0f9</code></strong>
+   <td colspan="3" ><strong>Qmsdkakad09sad0f9</strong>
    </td>
-   <td><strong><code>id</code></strong>
+   <td><strong>id</strong>
    </td>
-   <td colspan="2" ><code>0x0001, 0x011</code>
+   <td colspan="2" >0x0001, 0x011
    </td>
-   <td><strong><code>addr</code></strong>
+   <td><strong>addr</strong>
    </td>
-   <td colspan="2" ><code>JHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ</code>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong><code>message</code></strong>
-   </td>
-   <td colspan="3" ><code>QL9RL9BRVGUKNOS9BJPEZNW9NWXSJCBKOJLGASARQMPXVZYXMAYOJDXTSNRX9KMWZNTJRZMONURODNXSD</code>
-   </td>
-   <td><strong><code>src</code></strong>
-   </td>
-   <td colspan="4" ><code>QmGadjasdajxasbancsij</code>
+   <td colspan="2" >JHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ
    </td>
   </tr>
   <tr>
-   <td><strong><code>val</code></strong>
+   <td colspan="2" ><strong>message</strong>
    </td>
-   <td><strong><code>-1</code></strong>
+   <td colspan="3" >QL9RL9BRVGUKNOS9BJPEZNW9NWXSJCBKOJLGASARQMPXVZYXMAYOJDXTSNRX9KMWZNTJRZMONURODNXSD
    </td>
-   <td><strong><code>timestamp</code></strong>
+   <td><strong>src</strong>
+   </td>
+   <td colspan="4" >QmGadjasdajxasbancsij
+   </td>
+  </tr>
+  <tr>
+   <td><strong>val</strong>
+   </td>
+   <td><strong>-1</strong>
+   </td>
+   <td><strong>timestamp</strong>
    </td>
    <td>
-        <code>1515494426</code>
+        1515494426
    </td>
-   <td colspan="2" ><strong><code>trunk</code></strong>
+   <td colspan="2" ><strong>trunk</strong>
    </td>
-   <td colspan="4" ><code>QmAsaskakad09sad0f9</code>
+   <td colspan="4" >QmAsaskakad09sad0f9
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong><code>branch</code></strong>
+   <td colspan="2" ><strong>branch</strong>
    </td>
    <td colspan="2" >
-<code>Y</code>
+Y
    </td>
-   <td colspan="2" ><strong><code>tag</code></strong>
+   <td colspan="2" ><strong>tag</strong>
    </td>
-   <td colspan="4" ><code>CIP_TRANSAC</code>
+   <td colspan="4" >CIP_TRANSAC
    </td>
   </tr>
 </table>
@@ -141,54 +141,52 @@ _Ноды_, способные построить межсетевой мост 
 
 <table>
   <tr>
-   <td>
-<strong><code>hash</code></strong>
+   <td> <strong> hash </strong> </td>
+   <td colspan="3" ><strong>Qmsdkakad09sad0f9</strong>
    </td>
-   <td colspan="3" ><strong><code>Qmsdkakad09sad0f9</code></strong>
+   <td><strong>id</strong>
    </td>
-   <td><strong><code>id</code></strong>
+   <td colspan="2" >0x0001, 0x013
    </td>
-   <td colspan="2" ><code>0x0001, 0x013</code>
+   <td><strong>addr</strong>
    </td>
-   <td><strong><code>addr</code></strong>
-   </td>
-   <td colspan="2" ><code>JHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ</code>
+   <td colspan="2" >JHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong><code>message</code></strong>
+   <td colspan="2" ><strong>message</strong>
    </td>
-   <td colspan="3" ><code>QL9RL9BRVGUKNOS9BJPEZNW9NWXSJCBKOJLGASARQMPXVZYXMAYOJDXTSNRX9KMWZNTJRZMONURODNXSD</code>
+   <td colspan="3" >QL9RL9BRVGUKNOS9BJPEZNW9NWXSJCBKOJLGASARQMPXVZYXMAYOJDXTSNRX9KMWZNTJRZMONURODNXSD
    </td>
-   <td><strong><code>src</code></strong>
+   <td><strong>src</strong>
    </td>
-   <td colspan="4" ><code>JHGHGJHGHBHJHHHHBHBHBHBHBHBHBHBJHBHJBHJBJHBHYTFRDSEEWZXCHBIYUVVYCTYDYREXSYXYTCG</code>
+   <td colspan="4" >JHGHGJHGHBHJHHHHBHBHBHBHBHBHBHBJHBHJBHJBJHBHYTFRDSEEWZXCHBIYUVVYCTYDYREXSYXYTCG
    </td>
   </tr>
   <tr>
-   <td><strong><code>val</code></strong>
+   <td><strong>val</strong>
    </td>
-   <td><strong><code>0.6</code></strong>
+   <td><strong>0.6</strong>
    </td>
-   <td><strong><code>timestamp</code></strong>
+   <td><strong>timestamp</strong>
    </td>
    <td>
-        <code>1515494426</code>
+        1515494426
    </td>
-   <td colspan="2" ><strong><code>trunk</code></strong>
+   <td colspan="2" ><strong>trunk</strong>
    </td>
-   <td colspan="4" ><code>QmAsaskakad09sad0f9</code>
+   <td colspan="4" >QmAsaskakad09sad0f9
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong><code>branch</code></strong>
+   <td colspan="2" ><strong>branch</strong>
    </td>
    <td colspan="2" >
-<code>Y</code>
+Y
    </td>
-   <td colspan="2" ><strong><code>tag</code></strong>
+   <td colspan="2" ><strong>tag</strong>
    </td>
-   <td colspan="4" ><code>CIP_DKG_PARTH</code>
+   <td colspan="4" >CIP_DKG_PARTH
    </td>
   </tr>
 </table>
@@ -209,53 +207,53 @@ _Ноды_, способные построить межсетевой мост 
 <table>
   <tr>
    <td>
-<strong><code>hash</code></strong>
+<strong>hash</strong>
    </td>
-   <td colspan="3" ><strong><code>Qmsdkakad09sad0f9</code></strong>
+   <td colspan="3" ><strong>Qmsdkakad09sad0f9</strong>
    </td>
-   <td><strong><code>id</code></strong>
+   <td><strong>id</strong>
    </td>
-   <td colspan="2" ><code>0x0001, 0x015</code>
+   <td colspan="2" >0x0001, 0x015
    </td>
-   <td><strong><code>addr</code></strong>
+   <td><strong>addr</strong>
    </td>
-   <td colspan="2" ><code>JHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ</code>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="2" ><strong><code>message</code></strong>
-   </td>
-   <td colspan="3" ><code>QL9RL9BRVGUKNOS9BJPEZNW9NWXSJCBKOJLGASARQMPXVZYXMAYOJDXTSNRX9KMWZNTJRZMONURODNXSD</code>
-   </td>
-   <td><strong><code>src</code></strong>
-   </td>
-   <td colspan="4" ><code>JHGHGJHGHBHJHHHHBHBHBHBHBHBHBHBJHBHJBHJBJHBHYTFRDSEEWZXCHBIYUVVYCTYDYREXSYXYTCG</code>
+   <td colspan="2" >JHYLDJCBBTSFGVTBONTIVOWURCWMWBGGVRTOAMTKKFHWJAJHKKPWEYTAVDXMUSJBIUYEVZMO9LXBWHTUZ
    </td>
   </tr>
   <tr>
-   <td><strong><code>val</code></strong>
+   <td colspan="2" ><strong>message</strong>
    </td>
-   <td><strong><code>0</code></strong>
+   <td colspan="3" >QL9RL9BRVGUKNOS9BJPEZNW9NWXSJCBKOJLGASARQMPXVZYXMAYOJDXTSNRX9KMWZNTJRZMONURODNXSD
    </td>
-   <td><strong><code>timestamp</code></strong>
+   <td><strong>src</strong>
+   </td>
+   <td colspan="4" >JHGHGJHGHBHJHHHHBHBHBHBHBHBHBHBJHBHJBHJBJHBHYTFRDSEEWZXCHBIYUVVYCTYDYREXSYXYTCG
+   </td>
+  </tr>
+  <tr>
+   <td><strong>val</strong>
+   </td>
+   <td><strong>0</strong>
+   </td>
+   <td><strong>timestamp</strong>
    </td>
    <td>
-        <code>1515494426</code>
+        1515494426
    </td>
-   <td colspan="2" ><strong><code>trunk</code></strong>
+   <td colspan="2" ><strong>trunk</strong>
    </td>
-   <td colspan="4" ><code>QmAsaskakad09sad0f9</code>
+   <td colspan="4" >QmAsaskakad09sad0f9
    </td>
   </tr>
   <tr>
-   <td colspan="2" ><strong><code>branch</code></strong>
+   <td colspan="2" ><strong>branch</strong>
    </td>
    <td colspan="2" >
-<code>Y</code>
+Y
    </td>
-   <td colspan="2" ><strong><code>tag</code></strong>
+   <td colspan="2" ><strong>tag</strong>
    </td>
-   <td colspan="4" ><code>CIP_PROXY_READY</code>
+   <td colspan="4" >CIP_PROXY_READY
    </td>
   </tr>
 </table>
