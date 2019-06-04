@@ -2,9 +2,13 @@
 - [Архитектура](ru/app.md)
 - [Использование IPFS](ru/ipfs.md)
 - [Базовый протокол сети](ru/basic-protocol.md)
+- [Расширенный протокол сети](ru/extended.md)
 - Cообщения
   - [Общая структура](ru/message.md)
   - [Предложения по реализации](ru/transaction-implementation.md)
+  - [Подключение к приватной сети](ru/private-conn.md)
+  - [Краткое описание алгоритма PoS<sup>n</sup>](ru/posn.md)
+  - [Кросс-чейн обмен цифровыми ресурсами](ru/chain.md)
 - Умные контракты
   - [Сравнение некоторых виртуальных машин](ru/vm-comparison.md)
   - [Итоги тестирования виртуальных машин](ru/vm-evaluation-results.md)
