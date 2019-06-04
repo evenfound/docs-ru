@@ -102,7 +102,6 @@ _Создание прокси счета._
    <td colspan="2" ><strong>branch</strong>
    </td>
    <td colspan="2" >
-Y
    </td>
    <td colspan="2" ><strong>tag</strong>
    </td>
@@ -182,7 +181,6 @@ _Ноды_, способные построить межсетевой мост 
    <td colspan="2" ><strong>branch</strong>
    </td>
    <td colspan="2" >
-Y
    </td>
    <td colspan="2" ><strong>tag</strong>
    </td>
@@ -249,7 +247,6 @@ Y
    <td colspan="2" ><strong>branch</strong>
    </td>
    <td colspan="2" >
-Y
    </td>
    <td colspan="2" ><strong>tag</strong>
    </td>
