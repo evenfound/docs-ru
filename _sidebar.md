@@ -5,10 +5,10 @@
 - [Расширенный протокол сети](ru/extended.md)
 - Cообщения
   - [Общая структура](ru/message.md)
-  - [Предложения по реализации](ru/transaction-implementation.md)
+  - [Реализация](ru/transaction-implementation.md)
   - [Создание сети](ru/private-conn.md)
   - [Кросс-чейн обмен](ru/chain.md)
-  - [Алгориты](ru/posn.md)
+  - [Алгоритмы](ru/posn.md)
 - Умные контракты
   - [Сравнение некоторых виртуальных машин](ru/vm-comparison.md)
   - [Итоги тестирования виртуальных машин](ru/vm-evaluation-results.md)
