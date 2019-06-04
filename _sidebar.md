@@ -6,9 +6,9 @@
 - Cообщения
   - [Общая структура](ru/message.md)
   - [Предложения по реализации](ru/transaction-implementation.md)
-  - [Подключение к приватной сети](ru/private-conn.md)
-  - [Краткое описание алгоритма PoS<sup>n</sup>](ru/posn.md)
-  - [Кросс-чейн обмен цифровыми ресурсами](ru/chain.md)
+  - [Создание сети](ru/private-conn.md)
+  - [Кросс-чейн обмен](ru/chain.md)
+  - [Алгориты](ru/posn.md)
 - Умные контракты
   - [Сравнение некоторых виртуальных машин](ru/vm-comparison.md)
   - [Итоги тестирования виртуальных машин](ru/vm-evaluation-results.md)
