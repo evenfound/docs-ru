@@ -8,7 +8,9 @@
   - [Реализация](ru/transaction-implementation.md)
   - [Создание сети](ru/private-conn.md)
   - [Кросс-чейн обмен](ru/chain.md)
-  - [Алгоритмы](ru/posn.md)
+  - Алгоритмы
+    - [Rated DAG, PoS<sup>n</sup>, Hommomorhic Aggregate](ru/posn.md)
+    - [Мультиподписи](ru/schnorr.md)
 - Умные контракты
   - [Сравнение некоторых виртуальных машин](ru/vm-comparison.md)
   - [Итоги тестирования виртуальных машин](ru/vm-evaluation-results.md)
