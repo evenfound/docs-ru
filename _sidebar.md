@@ -9,7 +9,7 @@
   - [Создание сети](ru/private-conn.md)
   - [Кросс-чейн обмен](ru/chain.md)
   - Алгоритмы
-    - [Rated DAG, PoS<sup>n</sup>, Hommomorhic Aggregate](ru/posn.md)
+    - [Rated DAG, PoS<sup>n</sup>](ru/posn.md)
     - [Мультиподписи](ru/schnorr.md)
 - Умные контракты
   - [Сравнение некоторых виртуальных машин](ru/vm-comparison.md)
