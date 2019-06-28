@@ -6,9 +6,9 @@
   - [1.2.3. Использование](ru/usage.md)
   - [1.2.4. Базовые команды evenctl и их использование](ru/evenctl.md)
   
-[2. Смарт-контракты](smart_contracts.md)
-  - [2.1. Создание/компиляция/доступ/вызов](smart_contracts_manage.md)
-  - [2.2. Использование командной строки](smart_contracts_evenctl.md)
+[2. Смарт-контракты](ru/smart_contracts.md)
+  - [2.1. Создание/компиляция/доступ/вызов](ru/smart_contracts_manage.md)
+  - [2.2. Использование командной строки](ru/smart_contracts_evenctl.md)
   - 2.3. Примеры
   - [2.3.1. Hello, World!]()
   - [2.3.2. Internal Token]()
