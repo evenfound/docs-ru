@@ -1,5 +1,5 @@
-## Evenctl 
-Это клиентская программа для управления демоном `EvenGo` посредством протокола `gRPC`
+**evenctl** - Это клиентская программа для управления демоном `EvenGo` посредством протокола `gRPC`
+
 ## Использование
 
 `evenctl [COMMANDS] [OPTIONS]`
@@ -12,7 +12,7 @@ mkdir | Создает новый каталог по имени
 stat |  Выдает информацию файла по имени 
 fidn | Ищет файл  в сети по хешу 
 
-## Примеры
+## Пример создания файла
 ```sh
 $ evenctl file create -n abc -s /bin/bash
 
@@ -25,7 +25,7 @@ NumLinks 5
 LinksSize 222
 ```
 
-#### evenctl wallet
+#### evenctl Wallet
  Команда | Описание  
 ------------ | -------------
 create | Создает новый кошелек по имени , паролю и сид фразу 
@@ -36,7 +36,7 @@ pubkey |  Выдает публичный ключ аккаунта
 balance |  Выдает баланс акаунта 
 tx | Создает новую транзакцию 
 
-## Примеры
+## Пример создания счета и кошелька
 ```sh
 $ evenctl wallet create -n wallet1 -p wallet1 -s "abc def"
 2019/06/26 15:47:34 wallet1
@@ -48,7 +48,6 @@ $ evenctl wallet nextaccount -n wallet1 -p wallet1
 2019/06/26 15:49:02 mpi2PrWtyJQT8UKLwWijBBCFGpSCeNTLiC
 
 ```
-
 #### evenctl peer
  Команда | Описание  
 ------------ | -------------
@@ -57,7 +56,7 @@ id  | Выдает идентификатор нода
 add |  Добавляет новый пир в конфиге 
 send |  Отправляет хэш всем участникам в сети
 
-## Примеры
+## Пример получения списка пиров в сети
 ```sh
 $ evenctl peer list
 Peer : QmZ2j9AjjNsHUyRWAJRZSpDtxrK793LS5eZUpu5gkXHmN3
