@@ -1,3 +1,5 @@
+Кроссчейн обмен между Bitcoin и Litecoin
+
     // File: test.tgo
     // Message: string
     // Success: bool

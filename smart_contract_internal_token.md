@@ -1,3 +1,5 @@
+Internal Token
+
     // File: test.tgo
     // Message: string
     // Success: bool

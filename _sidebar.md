@@ -10,9 +10,9 @@
   - [2.1. Создание/компиляция/доступ/вызов](ru/smart_contracts_manage.md)
   - [2.2. Использование командной строки](ru/smart_contracts_evenctl.md)
   - 2.3. Примеры
-  - [2.3.1. Hello, World!](ru/smart_contract_helloworld.md)
+  - [2.3.1. Helloworld](ru/smart_contract_helloworld.md)
   - [2.3.2. Internal Token](ru/smart_contract_internal_token.md)
-  - [2.3.3. Кроссчейн обмен между Bitcoin и Litecoin](ru/smart_contract_internal_crosschain.md)
+  - [2.3.3. Кроссчейн обмен между Bitcoin и Litecoin](ru/smart_contract_crosschain.md)
 
 [3. Изучаем сеть EVEN]()
   - [3.1. Что такое Rated DAG, сравнение Rated DAG и DAG](ru/rdag.md)
