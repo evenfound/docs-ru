@@ -22,6 +22,8 @@
   - [3.5. CIP](ru/chain.md)
   - [3.6. SoDA с использованием Schnorr](ru/chain.md)
 
+
+
 <!-- - [Использование IPFS](ru/ipfs.md)
 - [Базовый протокол сети](ru/basic-protocol.md)
 - [Расширенный протокол сети](ru/extended.md)
