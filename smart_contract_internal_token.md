@@ -1,4 +1,5 @@
-Internal Token
+
+## Internal Token ##
 
     // File: test.tgo
     // Message: string

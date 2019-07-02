@@ -1,4 +1,5 @@
-Hello, World example
+
+## Hello, World example ##
  
     // File: test.tgo
     // Message: string
