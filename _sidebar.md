@@ -14,7 +14,7 @@
   - [2.3.2. Internal Token](ru/smart_contract_internal_token.md)
   - [2.3.3. Кроссчейн обмен между Bitcoin и Litecoin](ru/smart_contract_crosschain.md)
 
-[3. Изучаем сеть EVEN]()
+[3. Изучаем сеть EVEN](ru/network.md)
   - [3.1. Что такое Rated DAG, сравнение Rated DAG и DAG](ru/rdag.md)
   - [3.2. Структура транзакций](ru/message.md)
   - [3.3. Отправка и валидация транзакций](ru/transactions.md)
